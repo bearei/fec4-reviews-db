@@ -57,7 +57,7 @@ const generateData = (numOfProducts, maxReviews) => {
 
   let fileName = 1,
       idStart = 1,
-      idEnd = numOfProducts < 250000 ? numOfProducts : 250000;
+      idEnd = numOfProducts < 100000 ? numOfProducts : 100000;
   
   const runProducts = async function() {
     while (idEnd <= numOfProducts) {
@@ -66,13 +66,13 @@ const generateData = (numOfProducts, maxReviews) => {
       
       if (idEnd === numOfProducts) {
         idStart = 1;
-        idEnd = numOfProducts < Math.floor(250000 * 2 / maxReviews) ? numOfProducts : Math.floor(250000 * 2 / maxReviews);
+        idEnd = numOfProducts < Math.floor(100000 * 2 / maxReviews) ? numOfProducts : Math.floor(100000 * 2 / maxReviews);
         fileName = 1;
         break;
       } else {
         fileName++;
         idStart = idEnd + 1;``
-        idEnd = idEnd + 250000 < numOfProducts ? idEnd + 250000 : numOfProducts
+        idEnd = idEnd + 100000 < numOfProducts ? idEnd + 100000 : numOfProducts
       }
     }
   }
@@ -87,7 +87,7 @@ const generateData = (numOfProducts, maxReviews) => {
       } else {
         fileName++;
         idStart = idEnd + 1;
-        idEnd = idEnd + Math.floor(250000 * 2 / maxReviews) < numOfProducts ? Math.floor(idEnd + 250000 * 2 / maxReviews) : numOfProducts
+        idEnd = idEnd + Math.floor(100000 * 2 / maxReviews) < numOfProducts ? Math.floor(idEnd + 100000 * 2 / maxReviews) : numOfProducts
       }
     }
   }
