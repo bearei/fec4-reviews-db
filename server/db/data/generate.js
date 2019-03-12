@@ -99,8 +99,8 @@ const generateData = (numOfProducts, maxReviews) => {
     console.info('Execution time: %dm', end);
   }
     
-  clearFiles(__dirname + '/products')
-    .then(() => clearFiles(__dirname + '/reviews'))
+  clearFiles('/tmp/data/products/')
+    .then(() => clearFiles('/tmp/data/reviews/'))
     .then(() => start = new Date())
     .then(() => runProducts())
     .then(() => timer())
