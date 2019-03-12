@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/index.js",
     "devstart": "nodemon server/index.js",
-    "makeData": "node --max-old-space-size=6144 ./server/db/data/generate.js",
+    "makeData": "node ./server/db/data/generate.js",
     "seed": "node server/db/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
