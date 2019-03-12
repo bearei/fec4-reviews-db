@@ -1,0 +1,17 @@
+*.log
+*.err
+*.err.2019*
+.DS_Store
+bower_components
+node_modules
+bundle.js
+newrelic.js
+report*.*
+*.csv
+*.pem
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+

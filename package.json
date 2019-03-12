@@ -1,0 +1,36 @@
+{
+  "name": "fec4-reviews-db",
+  "version": "1.0.0",
+  "description": "Database for beaREI Review module",
+  "main": "./server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "devstart": "nodemon server/index.js",
+    "makeData": "node --max-old-space-size=6144 ./server/db/data/generate.js",
+    "seed": "node server/db/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "csv-writer": "^1.2.0",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "file-system": "^2.2.2",
+    "mariadb": "^2.0.3",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearei/fec4-reviews-db.git"
+  },
+  "keywords": [
+    "database",
+    "seed",
+    "reviews"
+  ],
+  "author": "Thomas Hsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bearei/fec4-reviews-db/issues"
+  },
+  "homepage": "https://github.com/bearei/fec4-reviews-db#readme"
+}
