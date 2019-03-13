@@ -8,7 +8,8 @@
     "devstart": "nodemon server/index.js",
     "makeData": "node ./server/db/data/generate.js",
     "seed": "node server/db/seed.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "connect": "ssh -i 'thomhsu_es2_key.pem' ec2-user@ec2-3-17-28-196.us-east-2.compute.amazonaws.com"
   },
   "dependencies": {
     "csv-writer": "^1.2.0",

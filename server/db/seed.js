@@ -34,7 +34,6 @@ async function runSeed() {
         reviewList = await listFiles(reviewPath);
 
     for (let i = 0; i < productList.length; i++) {
-      console.log('entered first write loop...')
       await conn.query(`LOAD DATA INFILE '${productPath + productList[i]}' INTO TABLE products FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 LINES;`)
         .then((success) => console.log(`Wrote product file ${productPath + productList[i]}...`))
         .catch((err) => console.log(`ERROR WRITING PRODUCT FILES to ${productPath}`,  err));
