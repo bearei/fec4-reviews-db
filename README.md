@@ -8,7 +8,8 @@ This project is currently deployed at http://3.16.21.170:3003/shopping/1/.  To v
 
 ## Related Projects
 
-  - https://github.com/bearei
+  - https://github.com/bearei/fec4-reviews - For the required front-end service
+  - https://github.com/bearei - For proxy server and additional services
 
 ## Table of Contents
 
